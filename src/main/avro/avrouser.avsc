@@ -1,9 +1,0 @@
-{"namespace": "learn.epam.module2",
-    "type": "record",
-    "name": "AvroUser",
-    "fields": [
-        {"name": "name", "type": "string"},
-        {"name": "favorite_number",  "type": ["int", "null"]},
-        {"name": "favorite_color", "type": ["string", "null"]}
-    ]
-}

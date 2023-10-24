@@ -1,15 +1,15 @@
-package learn.epam.module2;
+package com.epam.learn.avro;
 
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class KafkaProducerService {
+public class KafkaSimpleProducer {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
-    private final String topic = "blep";
+    private final String topic = "simple";
 
-    public KafkaProducerService(KafkaTemplate<String, String> kafkaTemplate) {
+    public KafkaSimpleProducer(KafkaTemplate<String, String> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 
