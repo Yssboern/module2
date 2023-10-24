@@ -13,3 +13,6 @@
 ./bin/kafka-storage.sh format -t $KAFKA_CLUSTER_ID -c config/kraft/server.properties
 
 ./bin/kafka-topics.sh --create --topic blep --bootstrap-server localhost:9092
+
+export CONFLUENT_HOME=~/confluent-7.5.1
+export PATH=$PATH:$CONFLUENT_HOME/bin
